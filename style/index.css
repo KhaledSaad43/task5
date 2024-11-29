@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top:42%;
+    left: 42%;
+    font-size: 3rem;
+    color: aqua;
+}
+.a{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: calc(100%/8);
+    height: 300px;
+    background-color: white;
+    transition: 0.3s ease;
+}
+.a:hover{
+    background-color: black;
+}
+.b{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: calc(100%/8);
+    height: 300px;
+    background-color: black;
+    transition: 0.3s ease;
+}
+.b:hover{
+    background-color: white;
+}
+.test{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right , orange , yellow);
+}
+.table-t{
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+
+}
+.table-t table{
+    border-spacing: 0px 15px 20px;
+    border:1px solid white;
+    padding: 2px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 900px;
+}
+
+ .table-t table tbody tr{
+    border:1px solid white;
+
+}
+.table-t table thead{
+    background:linear-gradient(to right , yellow , white);
+}
+.table-t table tbody td , .table-t table thead td{
+    padding: 15px 220px 15px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+.filters{
+    margin-left: 25%;
+}
+.filters img{
+    margin: 5px;
+    max-width: 420px;
+    transition: 0.3s;
+}
+.filters .pho1:hover{
+    border-radius: 50%;
+    filter: blur(2px);
+}
+.filters .pho2:hover{
+    border-radius: 50%;
+    filter:opacity(0);
+}
+.filters .pho3:hover{
+    border-radius: 50%;
+    filter:contrast(10);
+}
+.filters .pho4:hover{
+    border-radius: 50%;
+    filter:drop-shadow(5px 5px 10px rgba(0, 0, 0, 10));
+}
+.container{
+    align-items: center;
+}
+.text{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 1.2px;
+    word-spacing: 1px;
+}
+.text::first-letter{
+    font-size:15px;
+}
